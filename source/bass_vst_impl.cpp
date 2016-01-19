@@ -1588,10 +1588,11 @@ BOOL BASS_VSTDEF(BASS_VST_ProcessEvent)(DWORD vstHandle, DWORD midiCh, DWORD bas
 		case MIDI_EVENT_VOLUME:		CONTROLLER(7, loparam);										break;
 		case MIDI_EVENT_PAN:		CONTROLLER(10, loparam);									break;
 		case MIDI_EVENT_EXPRESSION:	CONTROLLER(11, loparam);									break;
+        case MIDI_EVENT_BANK_LSB:	CONTROLLER(32, loparam);									break;
 		case MIDI_EVENT_SUSTAIN:	CONTROLLER(64, loparam);									break;
 		case MIDI_EVENT_PORTAMENTO:	CONTROLLER(65, loparam);									break;
 		case MIDI_EVENT_RESONANCE:	CONTROLLER(71, loparam);									break;
-		case MIDI_EVENT_CUTOFF:		CONTROLLER(77, loparam);									break;
+		case MIDI_EVENT_CUTOFF:		CONTROLLER(74, loparam);									break;
 		case MIDI_EVENT_PORTANOTE:	CONTROLLER(84, loparam);									break;
 		case MIDI_EVENT_REVERB:		CONTROLLER(91, loparam);									break;
 		case MIDI_EVENT_CHORUS:		CONTROLLER(93, loparam);									break;
